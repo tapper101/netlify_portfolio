@@ -4,7 +4,6 @@ color: blue;
 
 .box {
  animation: spinnin 2s linear infinite normal; 
- background-color: wheat;
  width: 20px;
  height: 20px;
 }
@@ -12,8 +11,10 @@ color: blue;
 @keyframes spinnin {
  0% {
   transform: rotate(0deg);
+  background-color: wheat;
   }
   100% {
   transform: rotate(360deg);
+  background-color: orange;
   }
 }
