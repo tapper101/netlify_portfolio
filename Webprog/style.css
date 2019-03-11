@@ -1,3 +1,122 @@
 html {
+    font-size: 16px;
+    font-family: 'Roboto', arial, sans-serif;
+    color: #333;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    background-color: #4bc18c;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    display: inline-block;
+    width: 11rem; /* rem är en enhet some är relativ till font-size från root elementet (html). 1 rem är 16px, 2 rem är 32px, etc */
+}
+
+.header-left {
+    margin-left: 1rem;
+}
+
+.header-right {}
+
+.header-title {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 800;
+    display: block;
+    padding: 10px;
+}
+
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav {
+    text-align: center;
+}
+
+.menu-item {
+    display: inline-block;
+}
+
+.menu-item a {
+    display: block;
+    padding: 1.25rem 0.62rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+a.current-item {
+    font-weight: 800;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display:flex;
+}
+
+.sidebar {
+    min-width: 13rem; /* (13 * 16px) */
+    background-color: #f3f3f3;
+    min-height: 100vh; /* enheten %vh är relativ till viewportens höjd (höjden på webläsarens fönster) */
+    padding: 20px;
+    float:left;
+}
+
+.sidebartitle {
+    padding: 20px 10px;
+    margin: 0;
+}
+
+.sidebarmenu a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.main {
+    float:left;
+    padding: 40px;
+    max-width: 50rem;
+}
+
+.page-title {
+    margin: 0;
+}
+
+.page-sub {
+    margin: 0;
+}
+
+.content-section {
+    display:flex;
+    margin: 40px 0;
+}
+
+.content-section p, .content-section img {
+    margin:0 0 10px; /* top, höger/vänster, bottom */
+    padding-left: 20px;
+}
+
+.content-section h5 {
+    margin:0;
+    min-width: 6rem;
 }
