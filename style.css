@@ -3,7 +3,7 @@ color: blue;
 }
 
 .box {
- animation: spinnin 4s linear infinite normal; 
+ animation: spinnin 2s linear infinite normal; 
  width: 20px;
  height: 20px;
 }
@@ -14,11 +14,10 @@ color: blue;
   background-color: wheat;
   }
  50% {
-  transform: rotate(360deg);
   background-color: orange;
  }
  100% {
-  transform: rotate(0deg);
+  transform: rotate(360deg);
   background-color: wheat;
   }
 }
