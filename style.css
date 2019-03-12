@@ -3,7 +3,7 @@ color: blue;
 }
 
 .box {
- animation: spinnin 4s linear infinite initial; 
+ animation: spinnin 4s linear infinite normal; 
  width: 20px;
  height: 20px;
 }
