@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Uppgift 2</title>
+</head>
+<body>
+   <header>
+        <div class="header-left col">
+            <a class="header-title" href="index.html">Johan Tapper</a>
+        </div>
+        <div class="header-mid col">
+            <ul class="main-nav nav">
+                <li class="menu-item"><a class="current-item" href="webprog.html">WEBPROG</a></li>
+                <li class="menu-item"><a href="">KURS2</a></li>
+            </ul>
+        </div>
+        <div class="header-right col">
+            <ul class="main-nav nav">
+                <li class="menu-item"><a href="page-5.html">ABOUT</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h4 class="sidebartitle">WEBPROG</h4>
+            <ul class="sidebarmenu nav">
+                <li class="sidebar-menu-item"><a href="page-1.html">Uppgift 1</a></li>
+                <li class="sidebar-menu-item"><a class="current-item" href="page-2.html">Uppgift 2</a></li>
+                <li class="sidebar-menu-item"><a href="page-3.html">Uppgift 4</a></li>
+                <li class="sidebar-menu-item"><a href="page-4.html">Uppgift 5</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="page-header">
+                <h2 class="page-title">Uppgift 2 - Ett objektorienterat kassaregister</h2>
+                <h5 class="page-sub">WEBPROG</h5>
+            </div>
+            <div class="content">
+                <div class="content-section intro">
+                    <h5>ABSTRAKT:</h5>
+                    <div>
+                        <p class="abstract">Sätta ihop ett kassaregister som ska fungera som en modul i ett större system för e-handel i olika nordiska länder</p>
+                    </div>
+                </div>
+                <div class="content-section content-text">
+                    <h5>LÖSNING:</h5>
+                    <div>
+                        <p class="solution">Jag skapade klassen Cashregister som innehåller klassvariabeln 'nordic_reg' (en dictionary) där jag samlar alla nordiska länders register. Instansvariablarna är för det mesta tomma (0) integers vars funktion är att adderas med siffror för t.ex antal eller kostnader. Jag har även en variabel i form av en dictionary som samlar in sålda produkter och dess antal.</p>
+                        <p class="solution">Instansmetoden 'add_item' som används varje gång en produkt ska säljas är den metod som används för att fylla variablar som t.ex har koll på mängden solda produkter eller hur mycket det har sålts för. Även avdrag för skatt (TaxRate) görs här för varje produkt. </p>
+                        <p class="solution">I RegisterTester skapade jag instanser för varje nordiskt land. För varje lands register registrerade jag en mängd olika produkter (alla länder har olika produkter). sedan printade jag metoder som t.ex get_items_sold, get_total_sales, etc. för att se att allt fungerar som det ska.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+</body>
+</html>

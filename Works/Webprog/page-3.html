@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Uppgift 4</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-left col">
+            <a class="header-title" href="index.html">Johan Tapper</a>
+        </div>
+        <div class="header-mid col">
+            <ul class="main-nav nav">
+                <li class="menu-item"><a class="current-item" href="webprog.html">WEBPROG</a></li>
+                <li class="menu-item"><a href="">KURS2</a></li>
+            </ul>
+        </div>
+        <div class="header-right col">
+            <ul class="main-nav nav">
+                <li class="menu-item"><a href="page-5.html">ABOUT</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="sidebar">
+            <h4 class="sidebartitle">WEBPROG</h4>
+            <ul class="sidebarmenu nav">
+                <li class="sidebar-menu-item"><a href="page-1.html">Uppgift 1</a></li>
+                <li class="sidebar-menu-item"><a href="page-2.html">Uppgift 2</a></li>
+                <li class="sidebar-menu-item"><a class="current-item" href="page-3.html">Uppgift 4</a></li>
+                <li class="sidebar-menu-item"><a href="page-4.html">Uppgift 5</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="page-header">
+                <h2 class="page-title">Uppgift 4 - Validering med HTML och JavaScript</h2>
+                <h5 class="page-sub">WEBPROG</h5>
+            </div>
+            <div class="content">
+                <div class="content-section intro">
+                    <h5>ABSTRAKT:</h5>
+                    <div>
+                        <p class="abstract">Skapa ett formulär i HTML och sedan validera med HTML och JavaScript</p>
+                    </div>
+                </div>
+                <div class="content-section content-text">
+                    <h5>LÖSNING:</h5>
+                    <div>
+                        <p class="solution">Först skapade jag ett simpelt formulär i HTML som jag sedan stylade med CSS.</p>
+
+                        <p class="solution">Själva valideringen skedde främst via regular expressions i både HTML och JavaScript, samt med HTML-attributet 'required' som kollar om fältet överhuvudtaget har fyllts i. Den stora utmaningen var att validera BIC-numret, vilket jag löste genom att först kontrollera (if)all det givna värdet följer det mönster som BIC-nummer ska ha. Om det gjorde det så loopade jag genom värdet 10 gånger för att få ihop summan som sedan ska divideras med 11 - vilket i sin tur ska lämna en restsumma som motsvarar kontrollsiffran.</p>
+                        <p class="solution">Emailadressens domän jämfördes med det valda universitet (mer specifikt dess värde) i JavaScript.</p>
+                    </div>
+                </div>
+                <div class="content-section image-space">
+                    <h5>BILD:</h5>
+                    <div>
+                        <img class="image" src="bild.png" alt="Bild på formulär">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
