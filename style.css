@@ -18,6 +18,6 @@ color: blue;
  }
  100% {
   transform: rotate(360deg);
-  background-color: wheat;
+  background-color: yellowgreen;
   }
 }
